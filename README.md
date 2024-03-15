@@ -1,6 +1,77 @@
 # DisplayPred: Face Landmark Detection and Prediction
+## Installation and Setup
 
-DisplayPred is a project that involves training a neural network model to predict the position of the mouse cursor based on facial landmarks detected in real-time. The project consists of three main components: training the model (`trainer.py`), making predictions in real-time (`inference.py`), and collecting data for training (`collection.py`).
+This section provides instructions on how to set up your development environment for the DisplayPred project. It includes creating a virtual environment and installing all necessary Python libraries.
+
+### Prerequisites
+
+- Python 3.6 or higher
+- pip (Python package installer)
+
+### Step 1: Clone the Repository
+
+First, clone the DisplayPredictor repository to your local machine. You can do this by running the following command in your terminal:
+
+```bash
+git clone https://github.com/cvaz1306/displaypredictor.git
+```
+
+### Step 2: Create a Virtual Environment
+
+Navigate to the project directory:
+
+```bash
+cd displaypredictor
+```
+
+Create a virtual environment named `venv` (or any name you prefer):
+
+```bash
+python3 -m venv venv
+```
+
+Activate the virtual environment:
+
+- On Windows:
+
+```bash
+.\venv\Scripts\activate
+```
+
+- On macOS and Linux:
+
+```bash
+source venv/bin/activate
+```
+
+### Step 3: Install Dependencies
+
+With the virtual environment activated, install the required Python libraries using the `requirements.txt` file:
+
+```bash
+pip install -r requirements.txt
+```
+
+This command installs all the necessary libraries listed in the `requirements.txt` file, including PyTorch, OpenCV, Dlib, Tkinter, Pillow, screeninfo, and pyautogui.
+
+### Step 4: Verify Installation
+
+To verify that all libraries have been installed correctly, you can run a simple Python script that imports each library. Run `test_imports` in your project directory:
+
+
+```bash
+python test_imports.py
+```
+
+If the script runs without any import errors, your installation is successful.
+
+### Step 5: Running the Project
+
+Now that your environment is set up, you can run the DisplayPredictor scripts (`trainer.py`, `inference.py`, and `collection.py`) as described in the project documentation.
+
+---
+
+This setup ensures that your project's dependencies are isolated from other Python projects, making it easier to manage and update them without affecting other projects.
 
 ## Table of Contents
 
