@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 from backend.complexmodel import *
 import torch.nn.functional as F
 from backend.arguments import *
-
+import sys
 args=sys.argv
 keys=[('-i', "datasets/output.csv"), ('-o', "models/model.pth"), ('-e', "200000"), ('-lr', "0.000001")]
 values = extract_values_with_defaults(keys=keys, argv=args)
